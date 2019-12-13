@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.content-container {
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @media (min-width: $sm) and (max-width: $mdmax) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+
+.only {
+
+  &-sm {
+    @media (min-width: $sm) {
+      display: none;
+    }
+
+  }
+
+  &-md {
+    display: none;
+
+    @media (min-width: $sm) and (max-width: $mdmax) {
+      display: block;
+    }
+
+    // @media (min-width: $md),
+    // (max-width: $smmax) {
+    //   display: none;
+    // }
+
+    &-lg {
+      display: none;
+
+      @media (min-width: $sm) {
+        display: block;
+      }
+
+    }
+
+  }
+
+}

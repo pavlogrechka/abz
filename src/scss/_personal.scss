@@ -1,0 +1,27 @@
+.personal-account {
+  width: 260px;
+  height: 100vh;
+  padding-left: 14px;
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  display: none;
+
+  .menu-open & {
+    display: block;
+  }
+
+  @media (min-width: $sm) and (max-width: $mdmax) {
+
+    width: 260px;
+  }
+}
+
+
+
+// обращение у елементу через связнные классы?
+.personal-account+.burger--active {
+  display: block;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header header-wrapper content-container">
+      <div class="top-wrapper">
+        <div class="logo-wrapper">
+          <img src="../img/logo.png" alt="company-logo" class="logo" />
+        </div>
+        <div class="burger">
+          <!--обращение у елементу через связнные классы?
+        -->
+          <div class="burger__icon">
+            <div class="burger__line burger__line--first"></div>
+            <div class="burger__line burger__line--second"></div>
+            <div class="burger__lineline burger__line--third"></div>
+            <div class="burger__line burger__line--fourth"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="personal-account list-wrapper">
+      <div class="personal-account__img-wrapper">
+        <img
+          src="../img/user-superstar-2x.jpg"
+          alt="user-photo"
+          class="personal-account__photo"
+        />
+      </div>
+      <p class="user-name">Superstar</p>
+      <p class="user-mail">superstar@gmail.com</p>
+      <hr />
+      <div class="personal-account__list-wrapper">
+        <p class="list-item">About me</p>
+        <p class="list-item">Relationships</p>
+        <p class="list-item">Requirements</p>
+        <p class="list-item">Users</p>
+        <p class="list-item">Sing Up</p>
+        <p class="list-item">Sing Out</p>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-wrapper content-container ">
+        <h1 class="banner__title">
+          Test assignment for Frontend Developer position
+        </h1>
+        <p class="banner__text only-sm">
+          We kindly remind you that your test assignment should be submitted as
+          a link to github/bitbucket repository.
+        </p>
+        <p class="banner__text only-md-lg">
+          We kindly remind you that your test assignment should be submitted as
+          a link to github/bitbucket repository. Please be patient, we consider
+          and respond to every application that meets minimum requirements. We
+          look forward to your submission. Good luck!
+        </p>
+        <button class="banner__button">Sign Up</button>
+      </div>
+    </div>
+    <section class="about content-container">
+      <h2 class="about__title">Let's get acquinted</h2>
+      <div class="about__info">
+        <div class="about-img__wrapper">
+          <img src="../img/man-mobile.svg" alt="" class="about__img" />
+        </div>
+        <div class="about__info-inner">
+          <h3 class="about__subtitle">I am cool frontend developer</h3>
+          <p class="about__text">
+            When real users have a slow experience on mobile, they're much less
+            likely to find what they are looking for or purchase from you in the
+            future. For many sites this equates to a huge missed opportunity,
+            especially when more than half of visits are abandoned if a mobile
+            page takes over 3 seconds to load.
+          </p>
+          <p class="about__text">
+            Last week, Google Search and Ads teams announced two new speed
+            initiatives to help improve user-experience on the web.
+          </p>
+          <a href="#" class="about__signup">Sign Up</a>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
