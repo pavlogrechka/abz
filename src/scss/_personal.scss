@@ -1,25 +1,106 @@
 .personal-account {
-  width: 260px;
-  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  width: 250px;
   padding-left: 14px;
   padding-top: 30px;
-  position: absolute;
+  background-color: #fff;
   left: 0;
   top: 0;
-  background: #fff;
-  display: none;
 
-  .menu-open & {
-    display: block;
+
+
+
+  &__img-wrapper {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
-  @media (min-width: $sm) and (max-width: $mdmax) {
+  &__user-info--name {
 
+    .user-name {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 6px;
+    }
+
+    .user-mail {
+      font-size: 13px;
+      color: #8d8c8c;
+      padding-bottom: 24px;
+    }
+  }
+
+  hr {
+    margin-left: -14px;
+  }
+
+  @media (min-width: $md) {
+    .user-name {
+
+      @media (min-width: $sm) and (max-width: $mdmax) {}
+
+      @media (min-width: $md) and (max-width: $xlmax) {
+
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    .user-mail {
+      font-size: 12px;
+      color: #8d8c8c;
+    }
+
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__user-info {
+      padding-left: 55px;
+      align-items: center;
+      flex-direction: row-reverse;
+      display: flex;
+
+      &--name {
+        text-align: right;
+        margin-right: 15px;
+      }
+    }
+
+    &__list-wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  @media (max-width: $mdmax) {
     width: 260px;
+    padding-left: 14px;
+    padding-top: 30px;
+    display: none;
+
+    .menu-open & {
+      display: block;
+    }
+
+    @media (min-width: $sm) {
+      width: 260px;
+    }
+
   }
+
 }
 
-
+.icon-exit {
+  padding: 15px;
+  margin-right: -15px;
+  margin-left: 5px;
+}
 
 // обращение у елементу через связнные классы?
 .personal-account+.burger--active {

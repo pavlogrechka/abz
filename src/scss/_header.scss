@@ -19,6 +19,9 @@
   background: #fff;
 
   @media (min-width: $sm) and (max-width: $mdmax) {}
+
+  @media (min-width: $md) and (max-width: $xlmax) {}
+
 }
 
 
