@@ -10,84 +10,152 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header header-wrapper content-container">
-      <div class="top-wrapper">
-        <div class="logo-wrapper">
-          <img src="../img/logo.png" alt="company-logo" class="logo" />
-        </div>
-        <div class="burger">
-          <!--обращение у елементу через связнные классы?
-        -->
-          <div class="burger__icon">
-            <div class="burger__line burger__line--first"></div>
-            <div class="burger__line burger__line--second"></div>
-            <div class="burger__lineline burger__line--third"></div>
-            <div class="burger__line burger__line--fourth"></div>
+    <div class="page__wrapper">
+      <header class="header header-wrapper content-container">
+        <div class="top-wrapper">
+          <div class="logo-wrapper">
+            <img src="../img/logo.png" alt="company-logo" class="logo" />
+          </div>
+          <div class="personal-account list-wrapper">
+            <div class="personal-account__user-info">
+              <a href="#!" class="icon-exit only-lg">
+                <img
+                  src="../img/exit-top-right.svg"
+                  alt=""
+                  class="list-item__icon-exit"
+                />
+              </a>
+              <div class="personal-account__img-wrapper">
+                <img
+                  src="../img/user-superstar-2x.jpg"
+                  alt="user-photo"
+                  class="personal-account__photo"
+                />
+              </div>
+              <div class="personal-account__user-info--name">
+                <p class="user-name">Superstar</p>
+                <p class="user-mail">superstar@gmail.com</p>
+              </div>
+            </div>
+            <hr />
+            <div class="personal-account__list-wrapper">
+              <a href="#!" class="list-item">About me</a>
+              <a href="#!" class="list-item">Relationships</a>
+              <a href="#!" class="list-item">Requirements</a>
+              <a href="#!" class="list-item">Users</a>
+              <a href="#!" class="list-item">Sing Up</a>
+              <a href="#!" class="list-item only-sm-md">Sing Out</a>
+            </div>
+          </div>
+          <div class="burger only-sm-md">
+            <!--обращение у елементу через связнные классы?
+    -->
+            <div class="burger__icon">
+              <div class="burger__line burger__line--first"></div>
+              <div class="burger__line burger__line--second"></div>
+              <div class="burger__lineline burger__line--third"></div>
+              <div class="burger__line burger__line--fourth"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <div class="personal-account list-wrapper">
-      <div class="personal-account__img-wrapper">
-        <img
-          src="../img/user-superstar-2x.jpg"
-          alt="user-photo"
-          class="personal-account__photo"
-        />
-      </div>
-      <p class="user-name">Superstar</p>
-      <p class="user-mail">superstar@gmail.com</p>
-      <hr />
-      <div class="personal-account__list-wrapper">
-        <p class="list-item">About me</p>
-        <p class="list-item">Relationships</p>
-        <p class="list-item">Requirements</p>
-        <p class="list-item">Users</p>
-        <p class="list-item">Sing Up</p>
-        <p class="list-item">Sing Out</p>
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-wrapper content-container ">
-        <h1 class="banner__title">
-          Test assignment for Frontend Developer position
-        </h1>
-        <p class="banner__text only-sm">
-          We kindly remind you that your test assignment should be submitted as
-          a link to github/bitbucket repository.
-        </p>
-        <p class="banner__text only-md-lg">
-          We kindly remind you that your test assignment should be submitted as
-          a link to github/bitbucket repository. Please be patient, we consider
-          and respond to every application that meets minimum requirements. We
-          look forward to your submission. Good luck!
-        </p>
-        <button class="banner__button">Sign Up</button>
-      </div>
-    </div>
-    <section class="about content-container">
-      <h2 class="about__title">Let's get acquinted</h2>
-      <div class="about__info">
-        <div class="about-img__wrapper">
-          <img src="../img/man-mobile.svg" alt="" class="about__img" />
-        </div>
-        <div class="about__info-inner">
-          <h3 class="about__subtitle">I am cool frontend developer</h3>
-          <p class="about__text">
-            When real users have a slow experience on mobile, they're much less
-            likely to find what they are looking for or purchase from you in the
-            future. For many sites this equates to a huge missed opportunity,
-            especially when more than half of visits are abandoned if a mobile
-            page takes over 3 seconds to load.
+      </header>
+      <div class="banner">
+        <div class="banner-wrapper content-container ">
+          <h1 class="banner__title">
+            Test assignment for Frontend Developer position
+          </h1>
+          <p class="banner__text only-sm">
+            We kindly remind you that your test assignment should be submitted
+            as a link to github/bitbucket repository.
           </p>
-          <p class="about__text">
-            Last week, Google Search and Ads teams announced two new speed
-            initiatives to help improve user-experience on the web.
+          <p class="banner__text only-md-lg">
+            We kindly remind you that your test assignment should be submitted
+            as a link to github/bitbucket repository. Please be patient, we
+            consider and respond to every application that meets minimum
+            requirements. We look forward to your submission. Good luck!
           </p>
-          <a href="#" class="about__signup">Sign Up</a>
+          <button class="banner__button">Sign Up</button>
         </div>
       </div>
-    </section>
+      <section class="about content-container">
+        <h2 class="about__title">Let's get acquinted</h2>
+        <div class="about__info">
+          <div class="about__img-wrapper">
+            <img src="../img/man-mobile.svg" alt="" class="about__img" />
+          </div>
+          <div class="about__info-inner">
+            <h3 class="about__subtitle">I am cool frontend developer</h3>
+            <p class="about__text">
+              When real users have a slow experience on mobile, they're much
+              less likely to find what they are looking for or purchase from you
+              in the future. For many sites this equates to a huge missed
+              opportunity, especially when more than half of visits are
+              abandoned if a mobile page takes over 3 seconds to load.
+            </p>
+            <p class="about__text">
+              Last week, Google Search and Ads teams announced two new speed
+              initiatives to help improve user-experience on the web.
+            </p>
+            <a href="#" class="about__signup">Sign Up</a>
+          </div>
+        </div>
+        <h2 class="about__title">
+          About my relationships with web-development
+        </h2>
+        <div class="about__img-wrapper--skill">
+          <img src="../img/html.svg" alt="" class="about__img" />
+        </div>
+        <h3 class="about__subtitle">I'm in love with HTML</h3>
+        <p class="about__text">
+          Hypertext Markup Language (HTML) is the standard markup language for
+          creating web pages and web applications.
+        </p>
+        <div class="about__img-wrapper--skill">
+          <img src="../img/css.svg" alt="" class="about__img" />
+        </div>
+        <h3 class="about__subtitle">CSS is my best friend</h3>
+        <p class="about__text">
+          Cascading Style Sheets (CSS) is a style sheet language used for
+          describing the presentation of a document written in a markup language
+          like HTML.
+        </p>
+        <div class="about__img-wrapper--skill">
+          <img src="../img/javascript.svg" alt="" class="about__img" />
+        </div>
+        <h3 class="about__subtitle">JavaScript is my passion</h3>
+        <p class="about__text">
+          JavaScript is a high-level, interpreted programming language. It is a
+          language which is also characterized as dynamic, weakly typed,
+          prototype-based and multi-paradigm.
+        </p>
+      </section>
+      <section class="req content-container">
+        <h2 class="req__title">General requirements for the test task</h2>
+        <div class="req__img-wrapper">
+          <img src="../img/man-laptop-v1.svg" alt="" class="req__img" />
+        </div>
+        <p class="req__text">
+          Users want to find answers to their questions quickly and data shows
+          that people really care about how quickly their pages load. The Search
+          team announced speed would be a ranking signal for desktop searches in
+          2010 and as of this month (July 2018), page speed will be a ranking
+          factor for mobile searches too.
+        </p>
+        <p class="req__text">
+          If you're a developer working on a site, now is a good time to
+          evaluate your performance using our speed tools. Think about how
+          performance affects the user experience of your pages and consider
+          measuring a variety of real-world user-centric performance metrics.
+        </p>
+        <p class="req__text">
+          Are you shipping too much JavaScript? Too many images? Images and
+          JavaScript are the most significant contributors to the page weight
+          that affect page load time based on data from HTTP Archive and the
+          Chrome User Experience Report - our public dataset for key UX metrics
+          as experienced by Chrome users under real-world conditions.
+        </p>
+      </section>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

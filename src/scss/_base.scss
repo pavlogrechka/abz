@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +20,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -26,6 +35,11 @@ img {
   width: 100%;
 }
 
+.page__wrapper {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
 .content-container {
   padding-left: 14px;
   padding-right: 14px;
@@ -34,14 +48,38 @@ img {
     padding-left: 22px;
     padding-right: 22px;
   }
+
+  @media (min-width: $md) and (max-width: $xlmax) {
+    padding-left: 47px;
+    padding-right: 47px;
+
+  }
 }
 
+.list-item {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+
+  @media (min-width: $md) {
+    padding: 15px;
+  }
+
+
+}
 
 .only {
 
   &-sm {
     @media (min-width: $sm) {
       display: none;
+    }
+
+    &-md {
+      @media (min-width: $md) {
+        display: none;
+      }
     }
 
   }
@@ -69,4 +107,11 @@ img {
 
   }
 
+  &-lg {
+    display: none;
+
+    @media (max-width: $mdmax) {
+      display: none;
+    }
+  }
 }
