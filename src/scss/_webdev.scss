@@ -1,0 +1,71 @@
+.webdev {
+  text-align: center;
+
+  &__title {
+
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 34px;
+  }
+
+  &__skill {}
+
+  &__img-wrapper {
+
+    max-width: 87px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+
+  &__img {}
+
+  &__skill-desc {}
+
+  &__subtitle {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 13px;
+
+
+  }
+
+  &__text {
+
+    font-size: 16px;
+    color: #4c4b4b;
+    margin-bottom: 30px;
+
+  }
+
+  @media (min-width: $sm) and (max-width: $mdmax) {
+    // background-color: rgba($color: #000000, $alpha: .2);
+    text-align: left;
+
+    &__title {
+      min-width: 527px;
+      text-align: center;
+      font-size: 42px;
+    }
+
+    &__skill {
+      display: flex;
+    }
+
+
+    &__img-wrapper {
+      flex-shrink: 0;
+      margin-right: 35px;
+      width: 88px;
+    }
+
+    &__skill-desc {}
+
+    &__subtitle {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
