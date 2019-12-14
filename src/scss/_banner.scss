@@ -1,28 +1,32 @@
-.banner-wrapper {
-  min-height: 393px;
-  padding-top: 70px;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../img/banner-bg/banner-bg-320x393.jpg");
-
-  @media (min-width: $sm) and (max-width: $mdmax) {
-    min-height: 624px;
-    text-align: left;
-    margin-bottom: 120px;
-    background-image: url("../img/banner-bg/banner-bg-768x622.jpg");
-
-  }
-
-  @media (min-width: $md) and (max-width: $xlmax) {
-    background-image: url("../img/banner-bg/banner-bg-1204x723.jpg");
-    min-height: 725px;
-    text-align: left;
-  }
-
-}
-
 .banner {
+
+  &-wrapper {
+    max-height: 394px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/banner-bg/banner-bg-320x393.jpg");
+
+    @media (min-width: $sm) and (max-width: $mdmax) {
+      min-height: 622px;
+      text-align: left;
+      padding-top: 118px;
+      padding-bottom: 120px;
+      background-image: url("../img/banner-bg/banner-bg-768x622.jpg");
+
+    }
+
+    @media (min-width: $md) and (max-width: $xlmax) {
+      background-image: url("../img/banner-bg/banner-bg-1204x723.jpg");
+      min-height: 725px;
+      padding-top: 140px;
+      padding-bottom: 160px;
+    }
+
+  }
+
   color: #fff;
 
   &__title {
@@ -32,14 +36,15 @@
 
     @media (min-width: $sm) and (max-width: $mdmax) {
       max-width: 380px;
-      margin: 0;
       font-size: 42px;
       margin-bottom: 30px;
 
     }
 
     @media (min-width: $md) and (max-width: $xlmax) {
+      text-align: left;
       font-size: 50px;
+      max-width: 450px;
     }
 
   }
@@ -49,21 +54,22 @@
     font-family: $secondary-font;
     font-size: 16px;
     font-weight: 400;
-    margin: 0 auto;
-    padding-bottom: 40px;
+    margin: 0 auto 40px;
 
     @media (min-width: $sm) and (max-width: $mdmax) {
       margin: 0;
-      max-width: 384px;
+      max-width: 371px;
       font-size: 18px;
+      margin-bottom: 40px;
     }
 
-    @media (min-width: $md) and (max-width: $xlmax) {
-      max-width: 424px;
+    @media (min-width: $md) {
+      max-width: 430px;
       font-size: 20px;
       margin: 0;
+      margin-bottom: 46px;
+      text-align: left;
     }
-
   }
 
   &__button {
@@ -76,6 +82,11 @@
     @media (min-width: $sm) and (max-width: $mdmax) {
 
       font-size: 20px;
+    }
+
+    @media (min-width: $md) {
+      display: block;
+
     }
   }
 }

@@ -63,7 +63,7 @@ img {
     .content-container {
       padding-left: 22px;
       padding-right: 22px; } }
-  @media (min-width: 1024px) and (max-width: 1979.98px) {
+  @media (min-width: 1024px) {
     .content-container {
       padding-left: 47px;
       padding-right: 47px; } }
@@ -221,27 +221,29 @@ img {
 .personal-account + .burger--active {
   display: block; }
 
-.banner-wrapper {
-  min-height: 393px;
-  padding-top: 70px;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../img/banner-bg/banner-bg-320x393.jpg"); }
-  @media (min-width: 768px) and (max-width: 1023.98px) {
-    .banner-wrapper {
-      min-height: 624px;
-      text-align: left;
-      margin-bottom: 120px;
-      background-image: url("../img/banner-bg/banner-bg-768x622.jpg"); } }
-  @media (min-width: 1024px) and (max-width: 1979.98px) {
-    .banner-wrapper {
-      background-image: url("../img/banner-bg/banner-bg-1204x723.jpg");
-      min-height: 725px;
-      text-align: left; } }
-
 .banner {
   color: #fff; }
+  .banner-wrapper {
+    max-height: 394px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/banner-bg/banner-bg-320x393.jpg"); }
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+      .banner-wrapper {
+        min-height: 622px;
+        text-align: left;
+        padding-top: 118px;
+        padding-bottom: 120px;
+        background-image: url("../img/banner-bg/banner-bg-768x622.jpg"); } }
+    @media (min-width: 1024px) and (max-width: 1979.98px) {
+      .banner-wrapper {
+        background-image: url("../img/banner-bg/banner-bg-1204x723.jpg");
+        min-height: 725px;
+        padding-top: 140px;
+        padding-bottom: 160px; } }
   .banner__title {
     font-size: 30px;
     font-weight: 600;
@@ -249,29 +251,32 @@ img {
     @media (min-width: 768px) and (max-width: 1023.98px) {
       .banner__title {
         max-width: 380px;
-        margin: 0;
         font-size: 42px;
         margin-bottom: 30px; } }
     @media (min-width: 1024px) and (max-width: 1979.98px) {
       .banner__title {
-        font-size: 50px; } }
+        text-align: left;
+        font-size: 50px;
+        max-width: 450px; } }
   .banner__text {
     max-width: 280px;
     font-family: "Source Sans Pro", sans serif;
     font-size: 16px;
     font-weight: 400;
-    margin: 0 auto;
-    padding-bottom: 40px; }
+    margin: 0 auto 40px; }
     @media (min-width: 768px) and (max-width: 1023.98px) {
       .banner__text {
         margin: 0;
-        max-width: 384px;
-        font-size: 18px; } }
-    @media (min-width: 1024px) and (max-width: 1979.98px) {
+        max-width: 371px;
+        font-size: 18px;
+        margin-bottom: 40px; } }
+    @media (min-width: 1024px) {
       .banner__text {
-        max-width: 424px;
+        max-width: 430px;
         font-size: 20px;
-        margin: 0; } }
+        margin: 0;
+        margin-bottom: 46px;
+        text-align: left; } }
   .banner__button {
     padding: 10px 115px;
     border-radius: 4px;
@@ -281,6 +286,9 @@ img {
     @media (min-width: 768px) and (max-width: 1023.98px) {
       .banner__button {
         font-size: 20px; } }
+    @media (min-width: 1024px) {
+      .banner__button {
+        display: block; } }
 
 .about {
   padding-left: 18px;
@@ -294,10 +302,14 @@ img {
     @media (min-width: 768px) and (max-width: 1023.98px) {
       .about__title {
         font-size: 42px;
-        margin-bottom: 50px; } }
-  .about-img__wrapper {
+        margin-bottom: 50px;
+        text-align: center; } }
+  .about__img-wrapper {
     margin: 0 auto;
     max-width: 220px; }
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+      .about__img-wrapper {
+        max-width: 170px; } }
   .about__info-inner {
     margin-bottom: 70px; }
     @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -308,13 +320,6 @@ img {
     .about__info {
       display: flex;
       text-align: left; } }
-  .about__img-wrapper {
-    min-width: 240px;
-    margin-bottom: 29px; }
-    .about__img-wrapper--skill {
-      margin: 0 auto;
-      max-width: 90px;
-      margin-bottom: 14px; }
   .about__subtitle {
     max-width: 184px;
     margin: 0 auto;

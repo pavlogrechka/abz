@@ -3,7 +3,6 @@
   padding-top: 70px;
   padding-right: 18px;
   padding-bottom: 70px;
-
   text-align: center;
 
   &__title {
@@ -14,14 +13,19 @@
     @media (min-width: $sm) and (max-width: $mdmax) {
       font-size: 42px;
       margin-bottom: 50px;
+      text-align: center;
     }
 
-    @media (min-width: $md) and (max-width: $xlmax) {}
   }
 
-  &-img__wrapper {
+  &__img-wrapper {
     margin: 0 auto;
     max-width: 220px;
+
+    @media (min-width: $sm) and (max-width: $mdmax) {
+
+      max-width: 170px;
+    }
   }
 
   &__info {
@@ -46,17 +50,7 @@
 
   }
 
-  &__img-wrapper {
-    min-width: 240px;
-    margin-bottom: 29px;
 
-    &--skill {
-      margin: 0 auto;
-      max-width: 90px;
-      margin-bottom: 14px;
-
-    }
-  }
 
   &__img {
 
