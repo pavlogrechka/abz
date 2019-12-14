@@ -6,9 +6,13 @@
     font-size: 26px;
     color: #000;
     margin-bottom: 34px;
+
   }
 
-  &__skill {}
+  &__skill {
+
+    display: flex;
+  }
 
   &__img-wrapper {
 
@@ -22,11 +26,10 @@
   &__skill-desc {}
 
   &__subtitle {
+
     font-size: 22px;
     color: #000;
     margin-bottom: 13px;
-
-
   }
 
   &__text {
@@ -34,23 +37,26 @@
     font-size: 16px;
     color: #4c4b4b;
     margin-bottom: 30px;
-
   }
 
   @media (min-width: $sm) and (max-width: $mdmax) {
-    // background-color: rgba($color: #000000, $alpha: .2);
     text-align: left;
+    padding-bottom: 120px;
 
     &__title {
-      min-width: 527px;
-      text-align: center;
+      max-width: 542px;
       font-size: 42px;
+      text-align: center;
+      margin: 0 auto 50px;
     }
 
     &__skill {
-      display: flex;
-    }
 
+      max-width: 660px;
+      margin: 0 auto;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
 
     &__img-wrapper {
       flex-shrink: 0;
