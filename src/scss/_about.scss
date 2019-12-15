@@ -1,69 +1,28 @@
 .about {
+
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center;
 
-  @media (min-width: $sm) and (max-width: $mdmax) {
-    padding-top: 120px;
-    padding-bottom: 140px;
-
-  }
-
-  @media (min-width: $md) {}
-
   &__title {
 
+    margin-bottom: 30px;
     font-size: 26px;
-
-    @media (min-width: $sm) and (max-width: $mdmax) {
-      font-size: 42px;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
   }
 
   &__img-wrapper {
-    flex-shrink: 0;
-    margin: 0 auto;
-    max-width: 220px;
-    padding-top: 30px;
-    padding-bottom: 14px;
 
-    @media (min-width: $sm) and (max-width: $mdmax) {
-      max-width: 220px;
-    }
+    flex-shrink: 0;
+    margin: 0 auto 30px;
+    max-width: 220px;
   }
 
   &__info {
 
-    &-inner {
-
-
-      @media (min-width: $sm) and (max-width: $mdmax) {
-        padding-left: 20px;
-
-      }
-
-    }
-
-    @media (min-width: $sm) and (max-width: $mdmax) {
-      display: flex;
-      text-align: left;
-
-    }
-
-
+    &-inner {}
   }
 
-
-
-  &__img {
-
-
-    @media (min-width: $sm) and (max-width: $mdmax) {}
-
-  }
+  &__img {}
 
   &__subtitle {
     max-width: 184px;
@@ -71,11 +30,6 @@
     font-size: 22px;
     margin-bottom: 20px;
 
-    @media (min-width: $sm) and (max-width: $mdmax) {
-      max-width: 344px;
-      margin: 0;
-      font-size: 26px;
-    }
   }
 
   &__text {
@@ -84,11 +38,6 @@
     color: #4c4b4b;
     font-size: 16px;
     margin-bottom: 20px;
-
-    @media (min-width: $sm) and (max-width: $mdmax) {
-      font-size: 16px;
-      margin-bottom: 26px;
-    }
   }
 
   &__signup {
@@ -98,5 +47,99 @@
 
 
   }
+
+  //TABLET STYLES
+  @media (min-width: $sm) and (max-width: $mdmax) {
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__title {
+
+      margin-bottom: 50px;
+      font-size: 42px;
+    }
+
+    &__info {
+
+      display: flex;
+    }
+
+    &__info-inner {
+
+      flex-basis: 70%;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    &__img-wrapper {
+      padding: 0;
+      flex-basis: 30%;
+      margin: 0;
+    }
+
+    &__subtitle {
+      max-width: 344px;
+      margin: 0 0 20px 0;
+      font-size: 26px;
+    }
+
+    &__text {
+
+      font-size: 16px;
+      margin-bottom: 26px;
+    }
+
+    &_signup {}
+
+  }
+
+  //DESKTOP STYLES
+  @media (min-width: $md) {
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__title {
+
+      margin-bottom: 50px;
+      font-size: 42px;
+    }
+
+    &__info {
+
+      display: flex;
+    }
+
+    &__info-inner {
+
+      flex-basis: 70%;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    &__img-wrapper {
+      max-width: 290px;
+      flex-basis: 30%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__subtitle {
+      max-width: 344px;
+      margin: 0 0 20px 0;
+      font-size: 26px;
+    }
+
+    &__text {
+
+      font-size: 16px;
+      margin-bottom: 26px;
+    }
+
+    &_signup {}
+
+  }
+
+
 }
-//TABLET STYLES
