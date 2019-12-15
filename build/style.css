@@ -289,6 +289,7 @@ img {
     font-size: 16px;
     margin-bottom: 20px; }
   .about__signup {
+    display: block;
     color: #ef6c00;
     font-size: 22px;
     font-weight: bold; }
@@ -351,7 +352,12 @@ img {
     color: #000;
     margin-bottom: 34px; }
   .webdev__skill {
-    display: flex; }
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   .webdev__img-wrapper {
     max-width: 87px;
     margin: 0 auto;
@@ -374,7 +380,8 @@ img {
         text-align: center;
         margin: 0 auto 50px; }
       .webdev__skill {
-        max-width: 660px;
+        flex-direction: row;
+        max-width: 90%;
         margin: 0 auto;
         padding-left: 60px;
         padding-right: 60px; }
@@ -386,6 +393,27 @@ img {
         font-size: 26px; }
       .webdev__text {
         font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .webdev {
+      padding-bottom: 140px; }
+      .webdev__title {
+        max-width: 60%;
+        font-size: 42px;
+        margin: 0 auto 50px; }
+      .webdev__skill-wrapper {
+        display: flex;
+        text-align: left; }
+      .webdev__skill {
+        margin-right: 40px;
+        flex-basis: 33%;
+        align-items: start; }
+      .webdev__skill:last-child {
+        margin-right: 0; }
+      .webdev__img-wrapper {
+        max-width: 100px;
+        margin: 0 0 30px; }
+      .webdev__subtitle {
+        margin-bottom: 20px; } }
 
 .req {
   padding-top: 70px;

@@ -25,11 +25,11 @@
   &__img {}
 
   &__subtitle {
+
     max-width: 184px;
     margin: 0 auto;
     font-size: 22px;
     margin-bottom: 20px;
-
   }
 
   &__text {
@@ -41,15 +41,16 @@
   }
 
   &__signup {
+
+    display: block;
     color: #ef6c00;
     font-size: 22px;
     font-weight: bold;
-
-
   }
 
   //TABLET STYLES
   @media (min-width: $sm) and (max-width: $mdmax) {
+
     font-size: 42px;
     margin-bottom: 50px;
     text-align: center;

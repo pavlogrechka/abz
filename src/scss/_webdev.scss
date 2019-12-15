@@ -6,12 +6,16 @@
     font-size: 26px;
     color: #000;
     margin-bottom: 34px;
-
   }
 
   &__skill {
 
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__img-wrapper {
@@ -52,7 +56,8 @@
 
     &__skill {
 
-      max-width: 660px;
+      flex-direction: row;
+      max-width: 90%;
       margin: 0 auto;
       padding-left: 60px;
       padding-right: 60px;
@@ -72,6 +77,47 @@
 
     &__text {
       font-size: 16px;
+    }
+  }
+
+  //DESKTOP STYLES
+  @media (min-width: $md) {
+
+    padding-bottom: 140px;
+
+    &__title {
+
+      max-width: 60%;
+      font-size: 42px;
+      margin: 0 auto 50px;
+    }
+
+    &__skill-wrapper {
+
+      display: flex;
+      text-align: left;
+    }
+
+    &__skill {
+
+      margin-right: 40px;
+      flex-basis: 33%;
+      align-items: start;
+    }
+
+    &__skill:last-child {
+
+      margin-right: 0;
+    }
+
+    &__img-wrapper {
+
+      max-width: 100px;
+      margin: 0 0 30px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
     }
   }
 }
