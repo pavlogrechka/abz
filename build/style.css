@@ -34,8 +34,8 @@ img {
   margin: 0 auto; }
 
 .content-container {
-  padding-left: 16px;
-  padding-right: 16px; }
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (min-width: 768px) and (max-width: 1023.98px) {
     .content-container {
       padding-left: 25px;
@@ -485,3 +485,76 @@ img {
       .req__text {
         text-align: left;
         font-size: 16px; } }
+
+.users {
+  padding-top: 70px;
+  padding-bottom: 35px;
+  text-align: center; }
+  .users__title {
+    font-size: 26px; }
+  .users__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .users__photo-wrapper {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .users__photo-wrapper img {
+      display: block; }
+  .users__user-info {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #4c4b4b; }
+  .users__user-name {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700; }
+  .users__showmore {
+    max-width: 290px;
+    padding: 14px 90px 14px 90px;
+    color: #ef6c00;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #ef6c00;
+    border-radius: 4px;
+    background-color: #fff; }
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    .users {
+      padding-top: 70px;
+      padding-bottom: 35px;
+      text-align: center; }
+      .users__title {
+        font-size: 42px;
+        margin-bottom: 30px; }
+      .users__subtitle {
+        font-size: 18px;
+        margin-bottom: 40px; }
+      .users__photo-wrapper {
+        width: 70px;
+        margin: 0 auto;
+        margin-bottom: 14px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .users__photo-wrapper img {
+          display: block; }
+      .users__user-info {
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #4c4b4b; }
+      .users__user-name {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 700; }
+      .users__showmore {
+        max-width: 290px;
+        padding: 14px 90px 14px 90px;
+        color: #ef6c00;
+        font-size: 20px;
+        font-weight: 700;
+        border: 2px solid #ef6c00;
+        border-radius: 4px;
+        background-color: #fff; } }
