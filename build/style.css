@@ -34,8 +34,8 @@ img {
   margin: 0 auto; }
 
 .content-container {
-  padding-left: 14px;
-  padding-right: 14px; }
+  padding-left: 16px;
+  padding-right: 16px; }
   @media (min-width: 768px) and (max-width: 1023.98px) {
     .content-container {
       padding-left: 25px;
@@ -201,7 +201,7 @@ img {
 .banner {
   color: #fff; }
   .banner-wrapper {
-    max-height: 394px;
+    min-height: 394px;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -236,7 +236,7 @@ img {
         font-size: 50px;
         max-width: 450px; } }
   .banner__text {
-    max-width: 280px;
+    max-width: 380px;
     font-family: "Source Sans Pro", sans serif;
     font-size: 16px;
     font-weight: 400;
@@ -255,7 +255,11 @@ img {
         margin-bottom: 46px;
         text-align: left; } }
   .banner__button {
-    padding: 10px 115px;
+    min-width: 140px;
+    max-width: 380px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
     border-radius: 4px;
     border: none;
     color: #fff;
@@ -346,7 +350,8 @@ img {
         margin-bottom: 26px; } }
 
 .webdev {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 70px; }
   .webdev__title {
     font-size: 26px;
     color: #000;
@@ -418,4 +423,65 @@ img {
 .req {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-image: url("../img/third-block-bg/third-block-bg-320x1031.jpg"); }
+  background-image: url("../img/third-block-bg/third-block-bg-320x1031.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .req__title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px; }
+  .req__info {
+    display: flex;
+    flex-direction: column; }
+  .req__img-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .req__text {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.35; }
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    .req {
+      background-image: url("../img/third-block-bg/third-block-bg-768x878.jpg");
+      padding-top: 120px;
+      padding-bottom: 120px; }
+      .req__title {
+        max-width: 420px;
+        font-size: 42px;
+        margin: 0 auto 55px; }
+      .req__info {
+        display: flex;
+        flex-direction: row-reverse; }
+      .req__img-wrapper {
+        min-width: 50%;
+        margin: 0 auto; }
+      .req__text-container {
+        min-width: 45%;
+        margin-right: 20px; }
+      .req__text {
+        text-align: left;
+        font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .req {
+      background-image: url("../img/third-block-bg/third-block-bg-768x878.jpg");
+      padding-top: 140px;
+      padding-bottom: 150px; }
+      .req__title {
+        max-width: 420px;
+        font-size: 42px;
+        margin: 0 auto 55px; }
+      .req__info {
+        display: flex;
+        flex-direction: row-reverse; }
+      .req__img-wrapper {
+        min-width: 50%;
+        margin: 0 auto; }
+      .req__text-container {
+        min-width: 45%;
+        margin-right: 20px; }
+      .req__text {
+        text-align: left;
+        font-size: 16px; } }

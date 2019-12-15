@@ -1,7 +1,7 @@
 .banner {
 
   &-wrapper {
-    max-height: 394px;
+    min-height: 394px;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -50,7 +50,7 @@
   }
 
   &__text {
-    max-width: 280px;
+    max-width: 380px;
     font-family: $secondary-font;
     font-size: 16px;
     font-weight: 400;
@@ -73,7 +73,11 @@
   }
 
   &__button {
-    padding: 10px 115px;
+    min-width: 140px;
+    max-width: 380px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
     border-radius: 4px;
     border: none;
     color: #fff;
