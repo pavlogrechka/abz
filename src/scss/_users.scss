@@ -34,7 +34,6 @@
 
   }
 
-
   &__user-info {
 
     margin-bottom: 30px;
@@ -47,7 +46,6 @@
     margin-bottom: 15px;
     font-size: 22px;
     line-height: 22px;
-    font-weight: 700;
   }
 
   &__user-position {}
@@ -56,17 +54,20 @@
 
   &__showmore {
 
-    max-width: 290px;
+    // max-width: 290px;
     padding: 14px 90px 14px 90px;
     color: #ef6c00;
     font-size: 20px;
-    font-weight: 700;
     border: 2px solid #ef6c00;
     border-radius: 4px;
     background-color: #fff;
   }
 
   @media (min-width: $sm) and (max-width: $mdmax) {
+
+    padding-top: 70px;
+    padding-bottom: 35px;
+    text-align: center;
 
     &__title {
 
@@ -80,13 +81,18 @@
       margin-bottom: 40px;
     }
 
-    padding-top: 70px;
-    padding-bottom: 35px;
-    text-align: center;
 
-    &__users {}
+    &__users {
 
-    &__user-container {}
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    &__user-container {
+      max-width: 33%;
+      margin-right: 15px;
+    }
 
     &__photo-wrapper {
 
@@ -102,7 +108,6 @@
       }
 
     }
-
 
     &__user-info {
 
@@ -133,11 +138,43 @@
       border: 2px solid #ef6c00;
       border-radius: 4px;
       background-color: #fff;
+    }
+  }
 
+  @media (min-width: $md) {
+
+    &__users {
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+    &__photo-wrapper {
+
+      min-width: 70px;
+      margin-bottom: 14px;
+      margin-right: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {}
 
     }
 
+    &__user-container {
+
+      max-width: 33%;
+      margin: 0;
+      display: flex;
+      text-align: left;
+    }
+
+    &__user-info {}
+
+    &__user-name {}
+
+    &__user-position {}
+
+    &__user-email {}
 
   }
-
 }

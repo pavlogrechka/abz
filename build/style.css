@@ -510,14 +510,11 @@ img {
   .users__user-name {
     margin-bottom: 15px;
     font-size: 22px;
-    line-height: 22px;
-    font-weight: 700; }
+    line-height: 22px; }
   .users__showmore {
-    max-width: 290px;
     padding: 14px 90px 14px 90px;
     color: #ef6c00;
     font-size: 20px;
-    font-weight: 700;
     border: 2px solid #ef6c00;
     border-radius: 4px;
     background-color: #fff; }
@@ -532,6 +529,13 @@ img {
       .users__subtitle {
         font-size: 18px;
         margin-bottom: 40px; }
+      .users__users {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px; }
+      .users__user-container {
+        max-width: 33%;
+        margin-right: 15px; }
       .users__photo-wrapper {
         width: 70px;
         margin: 0 auto;
@@ -558,3 +562,18 @@ img {
         border: 2px solid #ef6c00;
         border-radius: 4px;
         background-color: #fff; } }
+  @media (min-width: 1024px) {
+    .users__users {
+      display: flex;
+      margin-bottom: 60px; }
+    .users__photo-wrapper {
+      min-width: 70px;
+      margin-bottom: 14px;
+      margin-right: 20px;
+      border-radius: 50%;
+      overflow: hidden; }
+    .users__user-container {
+      max-width: 33%;
+      margin: 0;
+      display: flex;
+      text-align: left; } }
