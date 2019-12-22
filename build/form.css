@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,600|Source+Sans+Pro:400,700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  max-width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: rgb(105, 105, 105);
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-avatar-desc {
+  border: 1px solid red;
+}

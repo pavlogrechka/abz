@@ -29,10 +29,35 @@ h3,
 h4,
 h5 {
   margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
 }
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .page__wrapper {
@@ -115,3 +140,25 @@ img {
     }
   }
 }
+
+
+
+// .header {
+//   display: none;
+// }
+
+// .banner {
+//   display: none;
+// }
+
+// .about {
+//   display: none;
+// }
+
+// .webdev {
+//   display: none;
+// }
+
+// .req {
+//   display: none;
+// }

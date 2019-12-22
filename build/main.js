@@ -14,3 +14,10 @@
   burger.addEventListener("click", fnOpenBurger);
   closeBg.addEventListener("click", fnCloseBurger);
 })();
+
+//Input Mask
+$(document).ready(function() {
+  // console.log($(".js-input-phone"));
+
+  $(".js-input-phone").inputmask("+38 (099) 999 99 99");
+});

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="/" method="post">
+        <label for="user-name-id">Name</label>
+        <input
+          class="form__user-name"
+          type="text"
+          name="user-name"
+          id="user-name-id"
+          placeholder="Your Name"
+        />
+        <label for="user-email-id">Email</label>
+        <input
+          class="form__user-email"
+          type="email"
+          name="user-email"
+          name="user-email-id"
+          placeholder="Your Email"
+        />
+        <select name="user-position" id="user-position-id">
+          <option value="">Select your position</option>
+          <option value="fronend">FrontEnd dev</option>
+          <option value="backend">BackEnd dev</option>
+          <option value="ui-designer">UI Designer</option>
+        </select>
+        <input
+          type="file"
+          value="Choose your file"
+          name="user-avatar"
+          id="user-avatar-id"
+        />
+        <input type="submit" value="Upload" />
+        <label for="user-avatar-id" class="form-avatar-btn"
+          >Upload your photo</label
+        >
+        <label for="user-avatar-id" class="form-avatar-desc"
+          >File format jpg up to 5 MB, the minimum size of 70x70px</label
+        >
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

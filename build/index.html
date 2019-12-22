@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <link rel="stylesheet" href="normalize.css" />
-    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>ABZ TEST</title>
   </head>
@@ -208,10 +208,10 @@
                 <p>Leading specialist of the Control Department</p>
               </div>
               <div class="users__user-email">
-                <p>noah.controldepartment@gmail.com</p>
+                <a href="mailto: usermail@gmail.com">usermail@gmai l.com</a>
               </div>
               <div class="users__user-phone">
-                <p>+38 (050) 678 03 24</p>
+                <a href="tel: +74951234567">+7 (495) 123-45-67</a>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@
                 <p>Leading specialist of the Control Department</p>
               </div>
               <div class="users__user-email">
-                <p>noah.controldepartment@gmail.com</p>
+                <p>department@gmail.com</p>
               </div>
               <div class="users__user-phone">
                 <p>+38 (050) 678 03 24</p>
@@ -325,9 +325,82 @@
         </div>
         <a href="#!" class="users__showmore">Show more</a>
       </section>
-
       <!-- USERS END -->
+      <section class="register content-container">
+        <div class="register__header">
+          <h2 class="register__title">Register to get a work</h2>
+          <p class="register__desc">
+            Attention! After successful registration and alert, update the list
+            of users in the block from the top
+          </p>
+        </div>
+        <div class="register__form-wrapper">
+          <div class="register__form-item form-user-name">
+            <label class="register__form-label" for="user-name">Name</label>
+            <input
+              class="register__form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="register__form-item form-user-email">
+            <label class="register__form-label" for="user-email">Email</label>
+            <input
+              class="register__form-input"
+              id="user-email"
+              type="email"
+              name="email-address"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="register__form-item form-user-phone">
+            <label class="register__form-label" for="user-phone">Phone</label>
+            <input
+              class="register__form-input js-input-phone"
+              type="phone"
+              id="user-phone"
+              name="user-phone"
+              placeholder="+38 (0__) ___ __ __"
+            />
+          </div>
+          <div class="register__form-item form-user-select">
+            <select name="" id="" class="register__form-select">
+              <option value="0" class="register__form-select-option" hidden>
+                Select your position
+              </option>
+              <option value="1" class="register__form-select-option"
+                >FrontEnd developer</option
+              >
+              <option value="2" class="register__form-select-option"
+                >BackEnd developer</option
+              >
+              <option value="3" class="register__form-select-option"
+                >UI designer</option
+              >
+            </select>
+          </div>
+          <div class="register__form-item form-user-file">
+            <label class="register__form-label-file" for="user-file"
+              >Upload your photo</label
+            >
+            <input
+              class="register__form-input-file input-file"
+              id="user-file"
+              type="file"
+            />
+          </div>
+        </div>
+        <div class="register__button"></div>
+      </section>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
